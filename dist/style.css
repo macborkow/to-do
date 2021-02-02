@@ -1,0 +1,64 @@
+.drawArea {
+    width: 50vw;
+    height: 80vh;
+    background-color: pink;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.projectArea {
+    z-index: 1;
+    width: 3vw;
+    height: 80vh;
+    background-color: red;
+    position: relative;
+    left: -3vw;
+    transition: 0.25s;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    color: transparent;
+}
+
+.projectArea:hover {
+    width: 10vw;
+    transition: 0.25s;
+    color: white;
+}
+
+.project {
+    font-size: 2vw;
+    transition: 0.2s;
+}
+
+.project:hover {
+    color: black;
+    transition: 0.2s;
+    cursor: crosshair;
+}
+
+.tasksArea {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.task {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+}
+
+.taskElement {
+    width: 17vw;
+    height: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: indianred;
+}
